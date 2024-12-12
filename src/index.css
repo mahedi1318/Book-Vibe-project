@@ -1,0 +1,35 @@
+/* ---------work-sans-google-font----------- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ---------Playfair-sans-google-font----------- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  max-width: 1320px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.work_sans{
+  font-family: "Work Sans", sans-serif; 
+}
+
+.playfair_font {
+  font-family: "Playfair Display", serif; 
+}
+
+
+a.active{
+  padding: 9px 15px;
+  border: 1px solid #23BE0A;
+  border-radius: 10px;
+  color: #23BE0A;
+}
+
+span.inline-flex.h-8.w-8.items-center.justify-center.rounded-full.bg-white\/30.group-hover\:bg-white\/50.group-focus\:outline-none.group-focus\:ring-4.group-focus\:ring-white.dark\:bg-gray-800\/30.dark\:group-hover\:bg-gray-800\/60.dark\:group-focus\:ring-gray-800\/70.sm\:h-10.sm\:w-10 {
+  background: rgba(68, 68, 68, 0.3);
+}

@@ -1,0 +1,81 @@
+
+[
+    {
+      "id": "1",
+      "title": "The Catcher in the Rye",
+      "description": "Review : Sit amet consectetur. Interdum porta pulvinar non sit aliquam. Aenean pulvinar blandit vel non enim elementum penatibus pellentesque ac. Nec accumsan euismod nulla adipiscing lectus. Morbi elementum a auctor erat diam tellus. Fermentum faucibus nulla enim ornare. Id neque neque pretium enim platea urna non dictum. Faucibus dignissim ridiculus nibh tristique massa non.",
+      "author": "Awlad Hossain",
+      "genre": "Fiction",
+      "tags": ["Young Adult", "Identity"],
+      "rating": 4.5,
+      "image": "src/assets/images/hero-1.png",
+      "pages": 281,
+      "publisher": "J.B. Lippincott & Co.",
+      "publication_year": 1960
+    },
+    {
+      "id": "2",
+      "title": "To Kill a Mockingbird",
+      "description": "Review : Sit amet consectetur. Interdum porta pulvinar non sit aliquam. Aenean pulvinar blandit vel non enim elementum penatibus pellentesque ac. Nec accumsan euismod nulla adipiscing lectus. Morbi elementum a auctor erat diam tellus. Fermentum faucibus nulla enim ornare. Id neque neque pretium enim platea urna non dictum. Faucibus dignissim ridiculus nibh tristique massa non.",
+      "author": "Harper Lee",
+      "genre": "Classic",
+      "tags": ["Drama", "Civil Rights"],
+      "rating": 4.8,
+      "image": "src/assets/images/img-1.png",
+      "pages": 328,
+      "publisher": "Secker & Warburg",
+      "publication_year": 1949
+    },
+    {
+      "id": "3",
+      "title": "1984",
+      "description": "Review : Sit amet consectetur. Interdum porta pulvinar non sit aliquam. Aenean pulvinar blandit vel non enim elementum penatibus pellentesque ac. Nec accumsan euismod nulla adipiscing lectus. Morbi elementum a auctor erat diam tellus. Fermentum faucibus nulla enim ornare. Id neque neque pretium enim platea urna non dictum. Faucibus dignissim ridiculus nibh tristique massa non.",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "tags": ["Political", "Science Fiction"],
+      "rating": 4.7,
+      "image": "src/assets/images/img-2.png",
+      "pages": 279,
+      "publisher": "T. Egerton",
+      "publication_year": 1813
+    },
+    {
+      "id": "4",
+      "title": "Pride and Prejudice",
+      "description": "Review : Sit amet consectetur. Interdum porta pulvinar non sit aliquam. Aenean pulvinar blandit vel non enim elementum penatibus pellentesque ac. Nec accumsan euismod nulla adipiscing lectus. Morbi elementum a auctor erat diam tellus. Fermentum faucibus nulla enim ornare. Id neque neque pretium enim platea urna non dictum. Faucibus dignissim ridiculus nibh tristique massa non.",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "tags": ["Classic", "Society"],
+      "rating": 4.6,
+      "image": "src/assets/images/img-3.png",
+      "pages": 180,
+      "publisher": "Charles Scribner's Sons",
+      "publication_year": 1925
+    },
+    {
+      "id": "5",
+      "title": "The Great Gatsby",
+      "description": "Review : Sit amet consectetur. Interdum porta pulvinar non sit aliquam. Aenean pulvinar blandit vel non enim elementum penatibus pellentesque ac. Nec accumsan euismod nulla adipiscing lectus. Morbi elementum a auctor erat diam tellus. Fermentum faucibus nulla enim ornare. Id neque neque pretium enim platea urna non dictum. Faucibus dignissim ridiculus nibh tristique massa non.",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Tragedy",
+      "tags": ["Classic", "American Dream"],
+      "rating": 4.4,
+      "image": "src/assets/images/img-6.png",
+      "pages": 635,
+      "publisher": "Harper & Brothers",
+      "publication_year": 1851
+    },
+    {
+      "id": "6",
+      "title": "The Catcher in the Rye",
+      "description": "Review : Sit amet consectetur. Interdum porta pulvinar non sit aliquam. Aenean pulvinar blandit vel non enim elementum penatibus pellentesque ac. Nec accumsan euismod nulla adipiscing lectus. Morbi elementum a auctor erat diam tellus. Fermentum faucibus nulla enim ornare. Id neque neque pretium enim platea urna non dictum. Faucibus dignissim ridiculus nibh tristique massa non.",
+      "author": "J.D. Salinger",
+      "genre": "Fiction",
+      "tags": ["Young Adult", "Identity"],
+      "rating": 4.2,
+      "image": "src/assets/images/img-5.png",
+      "pages": 277,
+      "publisher": "Little, Brown and Company",
+      "publication_year": 1951    
+    }
+  ]

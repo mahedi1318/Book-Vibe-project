@@ -19,18 +19,19 @@ const BooksList = () => {
     navigate(`/details/${id}`)
   }
 
+  const displayedBooks = allData.slice(0, 8);
 
   return (
     <section className="my-20">
-    <div className="container ">
+    <div className="container ">      
         <div>
             <h2 className="text-center playfair_font text-[40px] font-bold">Books</h2>
         </div>
         <div className="grid grid-cols-3 gap-6 mt-6">        
-        {allData.map((bookItem) => (
+        {displayedBooks.map((bookItem) => (
             <div onClick={() => handleBookClick(bookItem.id)} key={bookItem.id} className="w-full border p-6 rounded-xl cursor-pointer">
             <div className="w-full h-[240px] bg-[#f3f3f3] rounded-xl flex justify-center items-center">
-                <img className="w-[120px] h-[160px] object-cover" src={bookItem.image} alt={bookItem.title} />
+                <img className="w-[176px] h-[265px] object-cover" src={bookItem.image} alt={bookItem.title} />
             </div>
             <div className="mt-5">
                 <div className="flex gap-4">

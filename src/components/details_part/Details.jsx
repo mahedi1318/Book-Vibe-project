@@ -8,8 +8,8 @@ const Details = () => {
     let {detailsid} = useParams()
     let singleDataLoder = useLoaderData()
     const singleBookValue = singleDataLoder.find((bookItem)=> bookItem.id === detailsid)
-    const { title, description,image,author,genre,tags,rating,pages,publisher,publication_year} = singleBookValue
-    console.log(singleDataLoder )
+    const {image, title, description,author,genre,tags,rating,pages,publisher,publication_year} = singleBookValue
+    console.log(detailsid )
   return (
     <section className='my-20'>
       <div className="container flex gap-8">

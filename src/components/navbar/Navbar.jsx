@@ -12,6 +12,7 @@ const Navbar = () => {
             <div className="hidden md:block">
                 <ul className='flex gap-8 text-white work_sans text-[17px] font-normal'>
                     <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/booksall">Books All</NavLink></li>
                     <li><NavLink to="/listedbooks">Listed Books</NavLink></li>
                     <li><NavLink to="/pagesToRead">Pages to Read</NavLink></li>
                 </ul>

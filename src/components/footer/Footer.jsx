@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
-const Footer = () => {
+
+const Footer = () => { 
   return (
     <div>
       <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">

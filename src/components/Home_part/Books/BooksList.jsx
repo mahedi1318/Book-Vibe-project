@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Rating from "../../Rating/Rating";
 
 const BooksList = () => {
   const [allData, setAllData] = useState([]);
@@ -19,7 +20,7 @@ const BooksList = () => {
     navigate(`/details/${id}`)
   }
 
-  const displayedBooks = allData.slice(0, 8);
+  const displayedBooks = allData.slice(0, 6);
 
   return (
     <section className="my-20">
@@ -46,7 +47,10 @@ const BooksList = () => {
                 <hr className="mt-5" />
                 <div className="flex justify-between">
                 <p className="work_sans text-[16px] font-medium mt-4">{bookItem.genre}</p>
-                <p className="work_sans text-[16px] font-medium mt-4">{bookItem.rating}</p>
+                <div className="flex items-center gap-3 mt-4 work_sans text-[16px] font-medium">
+                  <Rating rating={bookItem.rating} />
+                  <p className="">({bookItem.rating})</p>
+                </div>
                 </div>
             </div>
             </div>

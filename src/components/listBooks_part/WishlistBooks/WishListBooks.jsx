@@ -1,20 +1,25 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import ShowBooks from '../ShowBooks'
+import { BookContext } from '../../context/BookProvider'
 
 
 const WishListBooks = () => {   
 
-    let singlewishValue = useLoaderData()
-    console.log(singlewishValue)
+    const {wish, setWish} = useContext(BookContext)
+
+    const deleteItem = (bookId)=>{
+      let booksDelete = wish.filter((itemBook)=> itemBook.id !== bookId)
+      setWish(booksDelete)
+    }
 
   return (
-    <section>
-        <div className="container">
-            {singlewishValue.map((wish)=>(
-                <ShowBooks key={wish.id} allData={wish} />
-            ))}        
-        </div>
+    <section className='mb-20'>
+      <div className="container">
+        {wish.map((item)=>(
+          <ShowBooks key={item.id} read={item} deleteItem={deleteItem}/>
+        ))}
+      </div>
     </section>
   )
 }

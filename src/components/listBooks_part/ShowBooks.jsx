@@ -1,12 +1,16 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const ShowBooks = ({read = { tags: [] }}) => {
+const ShowBooks = ({read = { tags: [] }, deleteItem}) => {
 
     let navigate = useNavigate()
 
     const handleViewDetails = ()=>{
         navigate(`/details/${read?.id}`)
+    }
+
+    const handleDelete = ()=>{
+        deleteItem(read.id)
     }
 
   return (
@@ -34,6 +38,7 @@ const ShowBooks = ({read = { tags: [] }}) => {
                     <div className="work_sans text-[16px] font-normal px-3 py-1 bg-[rgba(50,142,255,0.1)] text-[#328EFF] rounded-full">Category: Classic</div>
                     <div className="work_sans text-[16px] font-normal px-3 py-1 bg-[rgba(255,172,51,0.1)] text-[#ffac33] rounded-full">Rating: {read?.rating}</div>
                     <button onClick={handleViewDetails} className='work_sans text-[16px] font-normal px-3 py-1 bg-[#23BE0A] text-white rounded-full'>View Details</button>
+                    <button onClick={handleDelete} className='work_sans text-[16px] font-normal px-3 py-1 bg-[#ffac33] text-white rounded-full'>Delete</button>
                 </div>                
             </div>
         </div>

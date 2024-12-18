@@ -7,7 +7,7 @@ import { BookContext } from '../context/BookProvider'
 
 const Details = () => {
     
-  let {read, setRead} = useContext(BookContext)
+  let {read, setRead, wish, setWish,} = useContext(BookContext)
     let {detailsid} = useParams()
     let singleDataLoder = useLoaderData()
     const singleBookValue = singleDataLoder.find((bookItem)=> bookItem.id === detailsid)
@@ -23,9 +23,21 @@ const Details = () => {
         console.log("valu ase")
       }
     }
- console.log(read)
 
  const isRead = read.some((itemBook) => itemBook.id === singleBookValue.id);
+
+
+ const handleWishBookClick = (wishadd)=>{
+    let checkBoob = wish.find((itemBook)=> itemBook.id === wishadd.id)
+        if(!checkBoob){
+          setWish([...wish, wishadd])
+        }else{
+          console.log("valu ase")
+        }
+ }
+
+ const isWish = wish.some((itemBook) => itemBook.id === singleBookValue.id);
+ 
 
   return (
     <section className='my-20'>
@@ -64,9 +76,10 @@ const Details = () => {
                 ? 'bg-gray-300 border-gray-300 text-gray-700 cursor-not-allowed' : 'hover:bg-[#599DD2] hover:border-[#599DD2] hover:text-white'} 
                 work_sans text-[16px] font-semibold`} > {isRead ? 'Already Read' : 'Read'}
             </button>  
-                <button className='px-8 py-4 border-2 hover:bg-[#599DD2] rounded-xl transition-all duration-500 hover:border-[#599DD2] hover:text-white work_sans text-[16px] 
-                font-semibold'>Wishlist</button>
-            
+                <button onClick={()=> handleWishBookClick(singleBookValue)} disabled={isWish} className={`px-8 py-4 border-2 hover:bg-[#599DD2] rounded-xl transition-all duration-500
+                 ${isWish ? 'bg-gray-300 border-gray-300 text-gray-700 cursor-not-allowed' : 'hover:bg-[#599DD2] hover:border-[#599DD2] hover:text-white'} 
+                  work_sans text-[16px] font-semibold`} > {isWish ? 'Already wish' : 'wishList'}
+              </button>            
             </div>
         </div>     
       </div>
